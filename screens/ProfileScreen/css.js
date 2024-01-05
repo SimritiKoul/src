@@ -3,6 +3,8 @@ import {colors, fontScale} from '../../base'
 export const profileContainer = StyleSheet.create({
   profileContainer: {
     flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor:colors.white
   },
 })
@@ -50,7 +52,6 @@ export const profileOption = StyleSheet.create({
   optionText: {
     fontSize: 16 / fontScale,
     fontWeight:'400',
-    color: colors.black
    // right:'100%'
   },
   optionTextContainer: {

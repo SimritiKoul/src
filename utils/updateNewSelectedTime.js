@@ -11,11 +11,13 @@
  */
 
 export default updateNewSelectedTime = (date) => {
-
-    const time = date.toTimeString().substring(0,6) + "00";
-    // format time as '00:00:00'
-    console.log(time)
-
-    return time;
+    //the new time is picked
+    const newPickedTime = date.toLocaleString()
+    //this is the maximum length of the returned value of newPickedTime, but only pick a time, which is portion of it 
+    const MAXIMUM_LENGTH_OF_THE_RETURNED_TIME = 22
+    const startPoint = 11
+    let endPoint = 15  
+    if (newPickedTime.length == MAXIMUM_LENGTH_OF_THE_RETURNED_TIME) endPoint = 16 
+    return date.toLocaleString().substring(startPoint,endPoint)
     
 }

@@ -90,6 +90,7 @@ export const AuthProvider = ({children}) => {
   const loggingOut = () => setLoggedIn(false)
   const switchPage = () => setInLoginPage(prev => !prev)
 
+  const deleteProfile = () => {console.log("deleteProfile")}
 
   // run this function to determine whether the use has logged in everytime they open the app
   useEffect(() => {
@@ -97,7 +98,7 @@ export const AuthProvider = ({children}) => {
   },[])
 
   return (
-    <AuthContext.Provider value={{isLoggedIn, loggingIn, inLoginPage, switchPage, isLoading, loggedIn, setIsLoading, userInfo, userToken, saveUserAuth, logout, setUserInfo}}>
+    <AuthContext.Provider value={{isLoggedIn, loggingIn, inLoginPage, switchPage, isLoading, loggedIn, setIsLoading, userInfo, userToken, saveUserAuth, logout, setUserInfo, deleteProfile}}>
         {children}
     </AuthContext.Provider>
   );

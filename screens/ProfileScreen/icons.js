@@ -7,4 +7,3 @@ export const documentIcon = renderExpoIcon('Ionicons', 'md-document-outline', {s
 export const settingIcon = renderExpoIcon('Ionicons', 'settings-sharp', {size: 27 / fontScale, color: colors.appBtn})
 export const helpIcon = renderExpoIcon('Entypo', 'help-with-circle', {size: 27 / fontScale, color: colors.appBtn})
 export const logoutIcon = renderExpoIcon('Ionicons', 'log-out-outline', {size: 27 / fontScale, color: colors.appBtn})
-export const deleteIcon = renderExpoIcon('Ionicons', 'trash-outline', {size: 27 / fontScale, color: colors.appBtn})

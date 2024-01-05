@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://3.144.243.114/';
+export const BASE_URL = 'http://18.191.198.36/';
 export const SIGNUP_ROUTE = BASE_URL + 'api/v1/client/create'
 export const LOGIN_ROUTE = BASE_URL + 'api/v1/client/login'
 export const UPDATE_USER_ROUTE = BASE_URL + 'api/v1/client/update'
